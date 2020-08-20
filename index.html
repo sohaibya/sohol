@@ -23,7 +23,7 @@
           <div>
             
         <input id="number" type="number" placeholder="Age." min=1 max=125 required/>
-
+    
           </div>
           <div>
             <label for="dropdown">Chose between the following options</label>
@@ -34,6 +34,12 @@
                 <option value="part-time- employee">Part time </option>
                 <option value="Work-from-home">Work from Home</option>
             </select>
+            <label for="recommendation">* How likely you will refer your friend for current job you are doing</label>
+        <fieldset id="recommendation">
+          <label for="r_Surely"><input type="radio" name="recommend" id="r_Surely" value="Surely" required>Surely</label>
+          <label for="r_maybe"><input type="radio" name="recommend" id="r_maybe" value="maybe" required>maybe</label>
+          <label for="r_No-Way"><input type="radio" name="recommend" id="r_No-Way" value="No-Way" required>No-Way</label>
+        </fieldset>
           </div>
           <div>
               <label>Retired</label>
@@ -54,7 +60,13 @@
         </div>
           <input id="Submit" type="submit" value="submit" />
         </div>
+        <label for="comments">Enter your comments</label>
+        <textarea style="height:50px;resize:vertical;" id="comments" placeholder="enter a comment"></textarea>
+      </section>
 
+      <!-- submit -->
+      <button id="submit">submit</button>
+    </form>
     
 
     <!--
